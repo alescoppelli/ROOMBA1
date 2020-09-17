@@ -1,0 +1,67 @@
+defmodule Roomba1.MixProject do
+  use Mix.Project
+
+  def project do
+    [
+      app: :roomba1,
+      version: "0.1.0",
+      elixir: "~> 1.10",
+      start_permanent: Mix.env() == :prod,
+      deps: deps()
+    ]
+  end
+
+  # Run "mix help compile.app" to learn about applications.
+  def application do
+    [
+      extra_applications: [:logger]
+    ]
+  end
+
+  # Run "mix help deps" to learn about dependencies.
+  defp deps do
+    [
+      # {:dep_from_hexpm, "~> 0.3.0"},
+      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+        {:machinery, "~> 1.0.0"},
+	{:circuits_uart, "~> 1.3"===> Compiling telemetry
+==> decimal
+Compiling 4 files (.ex)
+Generated decimal app
+==> elixir_make
+Compiling 1 file (.ex)
+Generated elixir_make app
+==> ecto
+Compiling 55 files (.ex)
+warning: Decimal.cmp/2 is deprecated. Use compare/2 instead
+  lib/ecto/changeset.ex:2149: Ecto.Changeset.validate_number/6
+
+Generated ecto app
+==> machinery
+Compiling 3 files (.ex)
+Generated machinery app
+==> circuits_uart
+mkdir -p /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/priv
+mkdir -p /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj
+mkdir -p /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/ei_copy
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum_osx.o src/uart_enum_osx.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_comm.o src/uart_comm.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_comm_win.o src/uart_comm_win.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum_linux.o src/uart_enum_linux.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_comm_unix.o src/uart_comm_unix.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/util.o src/util.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/erlcmd.o src/erlcmd.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum_win.o src/uart_enum_win.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/debug_tests.o src/debug_tests.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/circuits_uart.o src/circuits_uart.c
+cc -c -I/usr/lib/erlang/usr/include -O2 -Wall -Wextra -Wno-unused-parameter -std=c99 -D_GNU_SOURCE -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum.o src/uart_enum.c
+cc /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum_osx.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_comm.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_comm_win.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum_linux.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_comm_unix.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/util.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/erlcmd.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum_win.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/debug_tests.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/circuits_uart.o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/obj/uart_enum.o -L/usr/lib/erlang/usr/lib -lei -lrt -o /home/coppelli/PROVE/PROVE_PROGRAMMI_ELIXIR/roomba1/_build/dev/lib/circuits_uart/priv/circuits_uart
+Compiling 6 files (.ex)
+Generated circuits_uart app
+==> roomba1
+Compiling 1 file (.ex)
+Generated roomba1 app
+   
+   ]
+  end
+end
