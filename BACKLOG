@@ -20,3 +20,8 @@ Module "states"
 (4) Send a "TURN_RIGHT" command 
 
 
+$ git add .
+$ git config --global user.email "ales.coppelli@gmail.com
+$ git commit -m 'Test not running'
+$ git branch -M master
+$ git push -u origin master
