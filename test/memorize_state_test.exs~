@@ -1,6 +1,0 @@
-defmodule MemorizeStateTest do
-  use ExUnit.Case
-
-
-
-end

@@ -1,5 +1,13 @@
 defmodule States do
-  use Machinery,
+@docmodule """
+ This module provide a FSM ( use Machinery ) and remember
+ current state by an Agent 
+
+
+"""
+
+
+use Machinery,
       
    states: [ "off", "passive", "safe", "full"],
    transitions: %{

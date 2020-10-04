@@ -1,0 +1,20 @@
+defmodule Roomba1Test do
+  use ExUnit.Case
+ 
+
+ #test "Fail" do
+ # assert true == false
+ #end 
+
+ test "Test function START" do
+    {:ok,pid} =  Roomba1.start_link(%Roomba1{})
+ end
+
+ test "Test CAST with movement 'FORWARD' " do
+   {:ok,pid} =  Roomba1.start_link(%Roomba1{})
+   assert  {:ok,Map.put(%Roomba1{},:command_result, :done)  }   == Roomba1.handle_cast(pid,%Roomba1{})
+
+ end
+
+
+end

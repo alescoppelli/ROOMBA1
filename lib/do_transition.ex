@@ -1,4 +1,15 @@
 defmodule DoTransition do
+@moduledoc  """
+  This module provides the function
+  to do transactions.
+ 
+    string2byte(String.t) :: {:ok,<<>> } | {:error, String.t}
+
+    ex.
+
+    string2byte("START") ->  {:ok,<<128>> }
+    string2byte("DUMMY") ->  {:error, "Command not found"}
+"""
 
  def start do
    {:ok}
